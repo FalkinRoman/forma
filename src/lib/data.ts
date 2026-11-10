@@ -2,6 +2,7 @@
  * Демо-данные экранов прототипа. Все числа — иллюстрация, не реальные метрики.
  * В продукте приходят из единой модели данных бизнеса (клиенты, заказы, товары, события).
  */
+import { BASE } from "@/lib/base";
 import type { StatusKind } from "@/components/ui/status";
 import type { ProductKind } from "./mock";
 
@@ -31,7 +32,7 @@ export const products: Product[] = [
     updated: "сегодня, 10:42",
     url: "delikatesy.ru",
     env: "production",
-    preview: "/images/mock-site.png",
+    preview: BASE + "/images/mock-site.png",
     metrics: [
       { label: "Визиты за 7 дней", value: "8 214" },
       { label: "Конверсия", value: "3,4%" },
@@ -48,7 +49,7 @@ export const products: Product[] = [
     updated: "вчера, 18:05",
     url: "t.me/delikatesy_bot/shop",
     env: "production",
-    preview: "/images/mock-tg.png",
+    preview: BASE + "/images/mock-tg.png",
     metrics: [
       { label: "Открытия за 7 дней", value: "5 102" },
       { label: "Конверсия", value: "4,1%" },
@@ -64,7 +65,7 @@ export const products: Product[] = [
     version: "v2.1",
     updated: "8 ноя, 14:20",
     env: "production",
-    preview: "/images/mock-crm.png",
+    preview: BASE + "/images/mock-crm.png",
     metrics: [
       { label: "Заказов в работе", value: "37" },
       { label: "Среднее время сборки", value: "18 мин" },
@@ -80,7 +81,7 @@ export const products: Product[] = [
     version: "v0.6",
     updated: "сегодня, 09:15",
     env: "staging",
-    preview: "/images/mock-courier.png",
+    preview: BASE + "/images/mock-courier.png",
     metrics: [
       { label: "Готовность", value: "70%" },
       { label: "Тестовых доставок", value: "12" },
@@ -96,7 +97,7 @@ export const products: Product[] = [
     version: "—",
     updated: "в плане",
     env: "draft",
-    preview: "/images/mock-mobile.png",
+    preview: BASE + "/images/mock-mobile.png",
     metrics: [
       { label: "Оценка эффекта", value: "до +40% повторных" },
       { label: "Срок сборки", value: "≈ 3 недели" },

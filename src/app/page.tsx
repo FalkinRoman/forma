@@ -1,3 +1,4 @@
+import { BASE } from "@/lib/base";
 import Link from "next/link";
 import { LayoutDashboard } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
@@ -5,10 +6,10 @@ import { buttonVariants } from "@/components/ui/button";
 import { StartFlow } from "@/components/onboarding/start-flow";
 
 const how = [
-  { img: "/images/3d-ai.png", title: "Опишите идею", text: "Своими словами, голосом или файлами. AI спросит только важное." },
-  { img: "/images/3d-platform.png", title: "Получите план", text: "Какие продукты нужны и зачем — сайт, Mini App, CRM, агенты." },
-  { img: "/images/3d-bolt.png", title: "Выберите стиль", text: "2–3 дизайн-концепции вашего бренда с превью экранов." },
-  { img: "/images/3d-growth.png", title: "Запустите и растите", text: "Публикация с подтверждением, дальше — карта бизнеса и улучшения." },
+  { img: BASE + "/images/3d-ai.png", title: "Опишите идею", text: "Своими словами, голосом или файлами. AI спросит только важное." },
+  { img: BASE + "/images/3d-platform.png", title: "Получите план", text: "Какие продукты нужны и зачем — сайт, Mini App, CRM, агенты." },
+  { img: BASE + "/images/3d-bolt.png", title: "Выберите стиль", text: "2–3 дизайн-концепции вашего бренда с превью экранов." },
+  { img: BASE + "/images/3d-growth.png", title: "Запустите и растите", text: "Публикация с подтверждением, дальше — карта бизнеса и улучшения." },
 ];
 
 export default function StartPage() {

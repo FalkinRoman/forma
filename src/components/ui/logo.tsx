@@ -1,3 +1,4 @@
+import { BASE } from "@/lib/base";
 import { useId } from "react";
 import { cn } from "@/lib/cn";
 
@@ -39,7 +40,7 @@ export function LogoMark({ size = 32, mono, className }: { size?: number; mono?:
   if (mono) return <LogoMarkVector size={size} mono className={className} />;
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src="/brand/forma-mark.png" alt="" width={size} height={size} draggable={false} className={cn("shrink-0 select-none", className)} />
+    <img src={BASE + "/brand/forma-mark.png"} alt="" width={size} height={size} draggable={false} className={cn("shrink-0 select-none", className)} />
   );
 }
 

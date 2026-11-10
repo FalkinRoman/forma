@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE } from "@/lib/base";
 import { AnimatePresence, motion } from "motion/react";
 import { Check, Plus, Sparkles, X, type LucideIcon } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -65,7 +66,7 @@ export function AddModuleDialog({
           >
             <header className="flex items-start gap-4 px-6 pt-6 pb-4 sm:px-8 sm:pt-8">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/3d-platform.png" alt="" className="hidden h-14 w-auto sm:block" />
+              <img src={BASE + "/images/3d-platform.png"} alt="" className="hidden h-14 w-auto sm:block" />
               <div className="min-w-0 flex-1">
                 <h2 id="add-title" className="text-h2 font-semibold">
                   Создать часть системы

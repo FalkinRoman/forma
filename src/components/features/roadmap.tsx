@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE } from "@/lib/base";
 import { motion } from "motion/react";
 import { ArrowRight, Check, Sparkles, TrendingUp } from "lucide-react";
 import { cn } from "@/lib/cn";
@@ -109,7 +110,7 @@ export function NextStageCard({ className }: { className?: string }) {
       {/* фото справа, мягко растворяется к тексту */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/next-stage.jpg"
+        src={BASE + "/images/next-stage.jpg"}
         alt=""
         className="pointer-events-none absolute inset-y-0 right-0 h-full w-[46%] object-cover transition-transform duration-500 ease-soft [mask-image:linear-gradient(to_right,transparent,black_45%)] group-hover:scale-[1.04]"
       />

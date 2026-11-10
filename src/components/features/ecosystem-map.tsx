@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE } from "@/lib/base";
 import { AnimatePresence, motion } from "motion/react";
 import {
   Store,
@@ -67,12 +68,12 @@ const icons: Record<ProductKind, LucideIcon> = {
 };
 
 const previewImg: Partial<Record<ProductKind, string>> = {
-  site: "/images/mock-site.png",
-  mobile: "/images/mock-mobile.png",
-  miniapp: "/images/mock-tg.png",
-  crm: "/images/mock-crm.png",
-  courier: "/images/mock-courier.png",
-  agents: "/images/3d-ai.png",
+  site: BASE + "/images/mock-site.png",
+  mobile: BASE + "/images/mock-mobile.png",
+  miniapp: BASE + "/images/mock-tg.png",
+  crm: BASE + "/images/mock-crm.png",
+  courier: BASE + "/images/mock-courier.png",
+  agents: BASE + "/images/3d-ai.png",
 };
 
 function NodeBody({ node }: { node: EcoNode }) {
@@ -164,7 +165,7 @@ function Core({ onOpen }: { onOpen: () => void }) {
         )}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/3d-platform.png" alt="" draggable={false} className="h-[92px] w-auto drop-shadow-[0_12px_18px_rgba(23,105,255,0.25)] transition-transform duration-300 ease-soft group-hover:-translate-y-1" />
+        <img src={BASE + "/images/3d-platform.png"} alt="" draggable={false} className="h-[92px] w-auto drop-shadow-[0_12px_18px_rgba(23,105,255,0.25)] transition-transform duration-300 ease-soft group-hover:-translate-y-1" />
         <span className="mt-1 text-h3 font-semibold">Ядро бизнеса</span>
         <span className="mt-1 text-micro text-ink-2">Клиенты · Заказы · Товары · Процессы</span>
         <span className="mt-4 inline-flex h-9 items-center gap-1.5 rounded-full bg-accent px-4 text-caption whitespace-nowrap font-medium text-white shadow-[0_6px_16px_-4px_rgb(23_105_255/0.6)] transition-colors group-hover:bg-accent-hover">
